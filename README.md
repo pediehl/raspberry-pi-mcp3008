@@ -25,15 +25,15 @@ Bevor es weiter geht, muss der SPI Bus noch aktiviert werden, wenn das noch nich
 
 ![](images/mcp3008_Schaltplan.png)
 
-MCP3008|Raspberry Pi
---|--
-MCP3008 VDD | Raspberry Pi 3.3 V
-MCP3008 VDD | Raspberry Pi 3.3 V
-MCP3008 VREF | Raspberry Pi 3.3 V
-MCP3008 AGND | Raspberry Pi GND
-MCP3008 CLK | Raspberry Pi SCLK
-MCP3008 DOUT | Raspberry Pi MISO
-MCP3008 DIN | Raspberry Pi MOSI
+MCP3008         | Raspberry Pi
+----------------|-------------------
+MCP3008 VDD     | Raspberry Pi 3.3 V
+MCP3008 VDD     | Raspberry Pi 3.3 V
+MCP3008 VREF    | Raspberry Pi 3.3 V
+MCP3008 AGND    | Raspberry Pi GND
+MCP3008 CLK     | Raspberry Pi SCLK
+MCP3008 DOUT    | Raspberry Pi MISO
+MCP3008 DIN     | Raspberry Pi MOSI
 MCP3008 CS/SHDN | Raspberry  Pi CE0
 
 ## Beispiele starten
@@ -41,6 +41,7 @@ MCP3008 CS/SHDN | Raspberry  Pi CE0
 Auf deinem Raspberry solltest du jetzt unter Documents einen weiteren Ordner  haben. Öfnne den Ordner raspberry-pi-mcp3008 und gehe auf code. Hier gibt es zwei Python-Skripte:
 
 read_multiple_channels.py (Beispieldatei- nur diese Datei ausführen !)
+
 MCP3008.py (notwendige Python-Klasse - muss sich im gleichen Verzeichnis befinden)
 
 ## Wie starte ich das Python-Skript auf meinem Raspbery Pi?
