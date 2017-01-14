@@ -10,7 +10,7 @@ sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install python-dev git
 
-Lade dir jetzt das passende Github-Repository für die weihnachtskarte herunter
+Lade dir jetzt das passende Github-Repository für raspberry-pi-mcp3008 herunter
 
 cd Documents
 git clone https://github.com/pediehl/raspberry-pi-mcp3008.git
