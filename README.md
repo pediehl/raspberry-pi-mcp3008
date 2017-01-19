@@ -30,13 +30,13 @@ Bevor es weiter geht, muss der SPI Bus noch aktiviert werden, wenn das noch nich
 MCP3008         | Raspberry Pi
 ----------------|-------------------
 MCP3008 VDD     | Raspberry Pi 3.3 V
-MCP3008 VDD     | Raspberry Pi 3.3 V
 MCP3008 VREF    | Raspberry Pi 3.3 V
 MCP3008 AGND    | Raspberry Pi GND
 MCP3008 CLK     | Raspberry Pi SCLK
 MCP3008 DOUT    | Raspberry Pi MISO
 MCP3008 DIN     | Raspberry Pi MOSI
-MCP3008 CS/SHDN | Raspberry  Pi CE0
+MCP3008 CS/SHDN | Raspberry Pi CE0
+MCP3008 DGND    | Raspberry  Pi GND
 
 ## Beispiele starten
 
