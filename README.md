@@ -49,7 +49,7 @@ MCP3008.py (notwendige Python-Klasse - muss sich im gleichen Verzeichnis befinde
 ## Wie starte ich das Python-Skript auf meinem Raspbery Pi?
 
 Wechsel in den Ordner Documents/raspberry-pi-mcp3008/code/
-Wähle die Datei "read_multiple_channels.py", mach einen Klick mit der _rechten Maustaste_. Das Kontext-Menü erscheint.
+Wähle die Datei "read_multiple_channels.py", mach einen Klick mit der _rechten Maustaste_. Das Kontext-Menü erscheaint.
 
 ![Datei auswählen und Kontext-Menü pber die rechte Mausstaste](images/dateibereich_python3_auswaehlen.png)
 
@@ -58,3 +58,20 @@ Wähle hier bitte **Python3(Idle)**.
 ![Das Skript mit F5 starten](images/python_script_starten.png)
 
 Starte das Programm mit F5.
+
+## Aufbau Foto-Widerstand (LDR)
+### Material
+* Kabel
+* Photo-Zelle
+* Widerstand 10 KOhm
+
+Der Widerstand wird benötigen um einen Spanungsteiler aufzubauen. Besser: Über den Widerstand wird dafür gesorgt, dass nicht zu viel Spannung auf dem MCP3008 ankommt.
+
+![](images/mcp3008_raspberry_helligkeitssensor_Steckplatine.png)
+
+## Aufbau Potentiometer
+### Material
+* Kabel
+* Potentiometer
+
+![](images/mcp3008_raspberry_potentiometer_Steckplatine.png)
