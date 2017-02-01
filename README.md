@@ -27,16 +27,16 @@ Bevor es weiter geht, muss der SPI Bus noch aktiviert werden, wenn das noch nich
 
 ![](images/mcp3008_Schaltplan.png)
 
-MCP3008         | Raspberry Pi
-----------------|-------------------
-MCP3008 VDD     | Raspberry Pi 3.3 V
-MCP3008 VREF    | Raspberry Pi 3.3 V
-MCP3008 AGND    | Raspberry Pi GND
-MCP3008 CLK     | Raspberry Pi SCLK
-MCP3008 DOUT    | Raspberry Pi MISO
-MCP3008 DIN     | Raspberry Pi MOSI
-MCP3008 CS/SHDN | Raspberry Pi CE0
-MCP3008 DGND    | Raspberry  Pi GND
+MCP3008         | Raspberry Pi       | Raspberry Pi GPIO-PINS
+----------------|--------------------|-----------------------
+MCP3008 VDD     | Raspberry Pi 3.3 V | 3.3V
+MCP3008 VREF    | Raspberry Pi 3.3 V | 3.3V
+MCP3008 AGND    | Raspberry Pi GND   | GND
+MCP3008 CLK     | Raspberry Pi SCLK  | GP 11
+MCP3008 DOUT    | Raspberry Pi MISO  | GP 9
+MCP3008 DIN     | Raspberry Pi MOSI  | GP 10
+MCP3008 CS/SHDN | Raspberry Pi CE0   | GP 8
+MCP3008 DGND    | Raspberry  Pi GND  | GND
 
 ## Beispiele starten
 
