@@ -36,7 +36,11 @@ Aktiviere den SPI Bus über die Config-Oberfläche: `sudo raspi-config`
 
 Starte danach zur Sicherheit das System neu (Reboot).
 
-### Bei der grafischen Oberfläche
+### SPI in der grafischen Oberfläche aktivieren
+Bevor es weiter geht, muss der SPI Bus noch aktiviert werden, wenn das noch nicht geschehen ist. Aktiviere in der Konfiguration des Raspberry Pi unter dem Punkt „Schnittstellen“ die Option „SPI“. Starte danach zur Sicherheit das System neu (Reboot).
+
+![](images/spi_raspberry-pi.png)
+
 Bevor es weiter geht, muss der SPI Bus noch aktiviert werden, wenn das noch nicht geschehen ist. Aktiviere in der Konfiguration des Raspberry Pi unter dem Punkt „Schnittstellen“ die Option „SPI“. Starte danach zur Sicherheit das System neu (Reboot).
 
 ![](images/spi_raspberry-pi.png)
@@ -50,10 +54,6 @@ cd Documents
 git clone https://github.com/pediehl/raspberry-pi-mcp3008.git
 ```
 
-
-Bevor es weiter geht, muss der SPI Bus noch aktiviert werden, wenn das noch nicht geschehen ist. Aktiviere in der Konfiguration des Raspberry Pi unter dem Punkt „Schnittstellen“ die Option „SPI“. Starte danach zur Sicherheit das System neu (Reboot).
-
-![](images/spi_raspberry-pi.png)
 
 ## Aufbau
 ![](images/mcp3008_raspberry_Steckplatine.png)
