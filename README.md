@@ -11,13 +11,46 @@ Der Raspberry Pi mit seinen GPIOs kann keine analogen Signale auslesen. Um analo
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install python-dev git
+```
+
+### Hinweis Rasperry Pi Zero bzw. bei Raspbian Stretch Lite
+Das Modul **spidev** muss noch händisch installiert werden!
+
+```
+sudo apt-get install python-pip
+sudo pip install spidev
+sudo apt-get install python3-dev
+sudo apt-get install python3-pip
+sudo pip3 install spidev
+```
+
+Aktiviere den SPI Bus über die Config-Oberfläche: `sudo raspi-config`
+
+![](images/raspi-config1.png)
+
+![](images/raspi-config2.png)
+
+![](images/raspi-config3.png)
+
+![](images/raspi-config4.png)
+
+Starte danach zur Sicherheit das System neu (Reboot).
+
+### Bei der grafischen Oberfläche
+Bevor es weiter geht, muss der SPI Bus noch aktiviert werden, wenn das noch nicht geschehen ist. Aktiviere in der Konfiguration des Raspberry Pi unter dem Punkt „Schnittstellen“ die Option „SPI“. Starte danach zur Sicherheit das System neu (Reboot).
+
+![](images/spi_raspberry-pi.png)
+
+## weiter für alle Versionen des Raspberry Pi
 
 Lade dir jetzt das passende Github-Repository für raspberry-pi-mcp3008 herunter
 
+```
 cd Documents
 git clone https://github.com/pediehl/raspberry-pi-mcp3008.git
-
 ```
+
+
 Bevor es weiter geht, muss der SPI Bus noch aktiviert werden, wenn das noch nicht geschehen ist. Aktiviere in der Konfiguration des Raspberry Pi unter dem Punkt „Schnittstellen“ die Option „SPI“. Starte danach zur Sicherheit das System neu (Reboot).
 
 ![](images/spi_raspberry-pi.png)
