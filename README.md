@@ -7,14 +7,14 @@ Viele Sensoren bieten keine digitale Schnittstelle und sind nur analog auslesbar
 Der Raspberry Pi mit seinen GPIOs kann keine analogen Signale auslesen. Um analoge Sensoren am Raspberry Pi auslesen zu könnenen, benötigen wir einen Analog-Digital Wandler z.B. den MCP3008. Damit können bis zu 8 analoge Eingänge über den SPI Bus am Raspberry Pi ausgelesen werden.
 
 ## Vorbereitung
-```bash
+```
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install python-dev git
 ```
 
 ### Hinweis Rasperry Pi Zero bzw. bei Raspbian Stretch Lite
-Das Modul **spidev** muss noch händisch installiert werden!
+Das PHP-Modul **spidev** muss noch händisch installiert werden!
 
 ```
 sudo apt-get install python-pip
