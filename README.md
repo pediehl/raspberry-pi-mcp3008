@@ -73,22 +73,21 @@ MCP3008 DGND    | Raspberry  Pi GND  | GND
 
 ## Beispiele starten
 
-Auf deinem Raspberry solltest du jetzt unter Documents einen weiteren Ordner  haben. Öfnne den Ordner raspberry-pi-mcp3008 und gehe auf code. Hier gibt es zwei Python-Skripte:
+Auf deinem Raspberry solltest du jetzt unter _**Documents**_ einen weiteren Ordner  haben. Öfnne den Ordner _**raspberry-pi-mcp3008**_ und gehe auf _**code**_. Hier gibt es drei Python-Skripte:
 
-read_multiple_channels.py (Beispieldatei- nur diese Datei ausführen !)
-
-MCP3008.py (notwendige Python-Klasse - muss sich im gleichen Verzeichnis befinden)
++ ldr.py
++ poti_ohm.py
++ poti_prozent.py
++ wassersensor.py
 
 ## Wie starte ich das Python-Skript auf meinem Raspbery Pi?
 
 Wechsel in den Ordner Documents/raspberry-pi-mcp3008/code/
-Wähle die Datei "read_multiple_channels.py", mach einen Klick mit der _rechten Maustaste_. Das Kontext-Menü erscheaint.
+Wähle eine gewünschte Datei, mach einen Klick mit der _rechten Maustaste_. Das Kontext-Menü erscheint.
 
 ![Datei auswählen und Kontext-Menü pber die rechte Mausstaste](images/dateibereich_python3_auswaehlen.png)
 
 Wähle hier bitte **Python3(Idle)**.
-
-![Das Skript mit F5 starten](images/python_script_starten.png)
 
 Starte das Programm mit F5.
 
@@ -102,9 +101,67 @@ Der Widerstand wird benötigen um einen Spanungsteiler aufzubauen. Besser: Über
 
 ![](images/mcp3008_raspberry_helligkeitssensor_Steckplatine.png)
 
+#### Berechnung in Ohm
+
+```python
+import time, gpiozero
+
+ldr = gpiozero.MCP3008 (channel = 0)
+
+while True :
+ wert =  int((ldr.raw_value / 1023) * 1000)
+ print ("Der Wert am Foto-Widerstand beträgt: " , wert , "Ohm")
+ time.sleep (1)
+```
+
+
 ## Aufbau Potentiometer
 ### Material
 * Kabel
 * Potentiometer
 
 ![](images/mcp3008_raspberry_potentiometer_Steckplatine.png)
+
+#### Berechnung in Prozent
+```python
+import time, gpiozero
+
+poti = gpiozero.MCP3008 (channel = 0)
+
+while True :
+ wert = int ( poti.value * 100)
+ print ("Der Poti steht auf" , wert , "%")
+ time.sleep (1)
+```
+
+#### Berechnung in Ohm
+```python
+import time, gpiozero
+
+poti = gpiozero.MCP3008 (channel = 0)
+
+while True :
+ wert =  int((poti.raw_value / 1023) * 1000)
+ print ("Der Poti steht auf" , wert , "Ohm")
+ time.sleep (1)
+
+```
+
+## Aufbau Wassersensor
+### Material
+* Kabel
+* Wassersensor
+
+![](images/mcp3008_raspberry_wassersensor_Steckplatine.png)
+
+#### Berechnung Spannung in Volt
+```python
+import time, gpiozero
+
+adc = gpiozero.MCP3008 (channel = 0)
+
+while True:
+ voltage = adc.voltage
+ print("Spannung am Wassersensor: %.2f V" % voltage)
+ time.sleep (1)
+```

@@ -1,6 +1,6 @@
-import time , gpiozero
+import time, gpiozero
 
-poti = gpiozero.MCP3008 (channel =0)
+poti = gpiozero.MCP3008 (channel = 0)
 
 while True :
  wert =  int((poti.raw_value / 1023) * 1000)
