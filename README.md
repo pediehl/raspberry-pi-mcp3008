@@ -93,7 +93,7 @@ Wähle hier bitte **Python3(Idle)**.
 Starte das Programm mit F5.
 
 ### Kommandozeile
-Wechsel in den Ordner Documents/raspberry-pi-mcp3008-board/code/
+Wechsel in den Ordner _**Documents/raspberry-pi-mcp3008-board/code/**_
 Starte ein Beispiel mit: `python3 ldr.py`
 
 
