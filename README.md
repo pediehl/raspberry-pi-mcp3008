@@ -82,7 +82,8 @@ Auf deinem Raspberry solltest du jetzt unter _**Documents**_ einen weiteren Ordn
 
 ## Wie starte ich das Python-Skript auf meinem Raspbery Pi?
 
-Wechsel in den Ordner Documents/raspberry-pi-mcp3008/code/
+### grafische Benutzeroberfläche
+Wechsel in den Ordner _**Documents/raspberry-pi-mcp3008/code/**_
 Wähle eine gewünschte Datei, mach einen Klick mit der _rechten Maustaste_. Das Kontext-Menü erscheint.
 
 ![Datei auswählen und Kontext-Menü pber die rechte Mausstaste](images/dateibereich_python3_auswaehlen.png)
@@ -90,6 +91,11 @@ Wähle eine gewünschte Datei, mach einen Klick mit der _rechten Maustaste_. Das
 Wähle hier bitte **Python3(Idle)**.
 
 Starte das Programm mit F5.
+
+### Kommandozeile
+Wechsel in den Ordner Documents/raspberry-pi-mcp3008-board/code/
+Starte ein Beispiel mit: `python3 ldr.py`
+
 
 ## Aufbau Foto-Widerstand (LDR)
 ### Material
