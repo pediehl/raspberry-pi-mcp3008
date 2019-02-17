@@ -96,7 +96,7 @@ Starte das Programm mit F5.
 Wechsel in den Ordner _**Documents/raspberry-pi-mcp3008-board/code/**_
 Starte ein Beispiel mit: `python3 ldr.py`
 
-#### **_Achtung: Die Beispiele funktionieren nur mit python3 !_**
+#### **_Achtung: Die Beispiele funktionieren nur mit Python 3 !_**
 
 ## Aufbau Foto-Widerstand (LDR)
 ### Material
